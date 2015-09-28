@@ -4,11 +4,18 @@ body{
 	background:#333;
 	font-family: 'Roboto', sans-serif,Arial;
 }
+hr{
+	height:5px; visibility:hidden;
+}
 h1,h2,h3,h4,h5,h6{color:#fff;}
 input,label,ul,li,a{margin:0px;padding:0px;list-style:none;}
 #main{
 	overflow:hidden;
 	width:100%;
+}
+#header{
+	margin:0px;
+	padding:5px;
 }
 #project{
 	margin:auto auto;
@@ -62,7 +69,11 @@ input,label,ul,li,a{margin:0px;padding:0px;list-style:none;}
 	margin:auto auto;
 	width:460px;
 }
-#bottom-menu li{
+#bottom-menu > #buttons {
+	position:relative;
+	overflow:hidden;
+}
+#bottom-menu > #buttons #li{
 	color:#ddd;
 	width:100px;
 	height:30px;
@@ -75,52 +86,28 @@ input,label,ul,li,a{margin:0px;padding:0px;list-style:none;}
 	background:rgba(0,0,0,0.1);
 	-webkit-transition:background 0.1s;
 }
-#bottom-menu li:hover{
+#bottom-menu > #buttons #li:hover{
 	background:rgba(0,0,0,0.2);
 	cursor:pointer;
 }
-#bottom-menu h5{
+#bottom-menu > #mails h5{
 	text-align:center;
 	color:#FFF;
 	position:relative;
 	overflow:hidden;
-	margin-bottom:5px;
+	margin:0px;
+	padding:0px;
 }
-#logs{
-	width:460px;
-	position:relative;
-}
-#logs > label > #logs-button{
-	width:120px;
-	height:20px;
-	line-height:20px;
-	background:rgba(0,0,0,0.1);
-	border-radius:5px;
-	padding:5px;
-	margin:auto auto;
-}
-#logs > label > #logs-button:hover{
-	cursor:pointer;
-	background:rgba(0,0,0,0.2);
-}
-#logs > label{
-	font-size:12px;
+#bottom-menu > #mails h4{
 	text-align:center;
-	color:#fff;
+	color:#FFF;
+	position:relative;
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
 }
-#logs > label > #check{
-	display:none;
-}
-#logs > label > #check:checked #logs{
-	height:300px;
-}
-#logs > #logs-texts{
-	width:480px;
-	height:200px;
-	background:#fff;
-	border-radius:5px;
+#bottom-menu > #mails{
+	position:relative;
+	width:460px;
 	margin:auto auto;
-}
-#logs > #logs-texts > ul > li{
-	background:#000;
 }
