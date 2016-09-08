@@ -1,0 +1,73 @@
+.page{
+    width:100%;
+    overflow:hidden;
+    display:block;
+}
+.menu{
+    z-index:999;
+    float:left;
+    display:inline-table;
+    width:140px;
+    height:100%;
+    position:fixed;
+    box-shadow:3px 0px 10px rgba(0,0,0,0.1);
+    transition:0.2s;
+}
+.menu img.button{
+    width:64px;
+    height:64px;
+    overflow:hidden;
+    position:absolute;
+    top:12px;
+    opacity:0;
+    transition:0.2s;
+}
+.rotate90{
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    opacity:1 !important;
+    right:-32px !important;
+}
+.menu .center-v{
+    width:100%;
+    margin-top:70px;
+}
+.menu .center-v .headerName{
+    text-align:center;
+    width:100%;
+    font-size:30px;
+}
+.menu .center-v .headerName span{
+    font-size:20px;
+}
+.menu .center-v .atgithub{
+    width:85%;
+    text-align:right;
+    padding:10px 0px;
+    font-size:12px;
+}
+.menu .center-v ul{
+    display:block;
+    width:100%;
+    text-align:right;
+    margin-top:16px;
+}
+.menu .center-v ul li:hover{
+    cursor:pointer;
+}
+.menu .center-v ul li{
+    padding: 5px;
+    transition:0.2s;
+}
+.menu .center-v ul li.active{
+    opacity:1;
+    color:#e85a71;
+}
+.menu .center-v ul li.deactive{
+    opacity: 0.6;
+}
+.contents{
+    width:700px;
+    margin:0 auto;
+}

@@ -1,0 +1,25 @@
+@media only screen and (max-width:1000px) {
+    .contents{
+        margin-left:140px;
+        width:83%;
+    }
+}
+@media only screen and (max-width:800px) {
+    .menu{
+        margin-left:-140px;
+    }
+    .menu img.button{
+        opacity:0.8;
+        z-index:2;
+        right:-32px;
+    }
+    .contents{
+        margin-left:0px;
+        z-index:1;
+        width:100%;
+    }
+
+    .show-menu{
+        margin-left:0px;
+    }
+}
