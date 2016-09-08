@@ -1,25 +1,33 @@
-@media only screen and (max-width:1000px) {
-    .contents{
-        margin-left:140px;
-        width:83%;
-    }
-}
 @media only screen and (max-width:800px) {
     .menu{
         margin-left:-140px;
     }
-    .menu img.button{
+    .menu .button{
         opacity:0.8;
         z-index:2;
         right:-32px;
     }
     .contents{
-        margin-left:0px;
+        margin-left:0;
         z-index:1;
         width:100%;
     }
-
+    .contents .content-inner{
+        margin:0;
+    }
+    .contents .content-center{
+        width:100%;
+    }
     .show-menu{
-        margin-left:0px;
+        margin-left:0;
+    }
+    .hakkimda h3{
+        width:100%;
+        left:0;
+        top:0;
+        text-align:center;
+    }
+    .egitim .box span{
+        font-size:12px;
     }
 }

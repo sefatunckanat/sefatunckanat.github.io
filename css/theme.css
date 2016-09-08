@@ -10,10 +10,10 @@
     width:140px;
     height:100%;
     position:fixed;
-    box-shadow:3px 0px 10px rgba(0,0,0,0.1);
     transition:0.2s;
+    box-shadow:1px 0px 20px rgba(0, 0, 0, 0.3)
 }
-.menu img.button{
+.menu .button{
     width:64px;
     height:64px;
     overflow:hidden;
@@ -23,11 +23,8 @@
     transition:0.2s;
 }
 .rotate90{
-    -ms-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     opacity:1 !important;
-    right:-32px !important;
 }
 .menu .center-v{
     width:100%;
@@ -44,7 +41,7 @@
 .menu .center-v .atgithub{
     width:85%;
     text-align:right;
-    padding:10px 0px;
+    padding:10px 0;
     font-size:12px;
 }
 .menu .center-v ul{
@@ -60,14 +57,135 @@
     padding: 5px;
     transition:0.2s;
 }
-.menu .center-v ul li.active{
+.menu .center-v ul .active{
     opacity:1;
     color:#e85a71;
 }
-.menu .center-v ul li.deactive{
+.menu .center-v ul .deactive{
     opacity: 0.6;
 }
+
 .contents{
+    width:100%;
+}
+.contents .content-inner{
+    margin-left:140px;
+}
+.contents .content-center{
     width:700px;
     margin:0 auto;
 }
+.hakkimda{
+    background-color:rgba(47, 27, 21, 0.71);
+    position:relative;
+    overflow:hidden;
+    max-height:200px;
+}
+.hakkimda img{
+    position:relative;
+    width:100%;
+    z-index:-1;
+}
+.hakkimda .slogan{
+    position:absolute;
+    right:10%;
+    top:30%;
+    font-size:30px;
+}
+.hakkimda .slogan span{
+    font-size:14px;
+    text-align:center;
+    display:block;
+    margin-top:10px;
+}
+.hakkimda .slogan p{
+    font-size:11px;
+    margin-top:10px;
+    text-align:center;
+}
+.egitim{
+    display:table;
+    table-layout: fixed;
+    height:150px;
+    width:100%;
+    position:relative;
+}
+.egitim .box{
+    display:table-cell;
+    height:150px;
+    position: relative;
+    text-align:center;
+    background:rgba(124, 169, 207, 0.8);
+    color:#fff;
+    overflow:hidden;
+}
+.egitim .box:first-child{
+    background:rgba(24, 193, 91, 0.62);
+}
+.egitim .box:last-child{
+    background:rgba(83, 70, 21, 0.57);
+}
+.egitim .box .bottom{
+    position: absolute;
+    display: block;
+    width: 100%;
+    transition:0.5s;
+    bottom:0px;
+    transform: translateY(0px);
+    line-height:1.2em;
+    padding:10px;
+    color:rgb(231, 231, 231);
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.3);
+    /* TODO: RESPONSIVE tasarımda font küçültülecek */
+}
+.egitim .box > span{
+    display: table-cell;
+    text-align:center;
+    transition:0.5s;
+    position:absolute;
+    height:100%;
+    width:100%;
+    padding:10px;
+    color:#fff;
+    box-sizing:border-box;
+    font-size:15px;
+    background:rgba(0,0,0,0.5);
+    margin-top:39px;
+    opacity:0;
+    vertical-align: middle;
+}
+.egitim .box .img{
+    max-height: 150px;
+    height:100%;
+    width: 100%;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity:0.7;
+}
+.egitim .box .img.center{
+    background-image: url(../img/university.png)!important;
+}
+.egitim .box .img:first-child{
+    background-image: url(../img/highschool.png);
+}
+.egitim .box .img:last-child{
+    background-image: url(../img/highschool.png);
+}
+/* HOVERS */
+.egitim .selected,
+.egitim .box:hover .img{
+    position: absolute;
+}
+.egitim .selected,
+.egitim .box:hover .bottom{
+    transform: translateY(-111px);
+    transition:0.2s;
+    background:rgba(0,0,0,0.7);
+}
+.egitim .selected,
+.egitim .box:hover > span{
+    opacity:1;
+}
+/* HOVERS */

@@ -96,7 +96,7 @@ body,html{
 }
 /* reset */
 a{
-    color:unset;
+    color:inherit;
     text-decoration:none;
 }
 b{
