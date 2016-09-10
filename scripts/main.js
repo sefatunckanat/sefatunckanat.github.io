@@ -31,7 +31,7 @@ $(document).ready(function () {
     $('.menu li').bind('click', function() {
         //yumuşak kaydırma işlemi
         var hash = $(this).find('span').attr('rel');
-        $('html, body').animate({
+        $('html, body').animate({ 
             scrollTop: $(hash).offset().top
         },800);
         return false;
