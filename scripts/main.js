@@ -103,7 +103,7 @@ $(document).ready(function () {
     }
     liveSpans();
     var liveSpansLoop = setInterval(liveSpans,1000); // döngü
-    
+
     $(".box .texts span").each(function() {
         var maxW = parseInt($(this).closest(".texts").css("width"),10);
         var maxH = parseInt($(this).closest(".texts").css("height"),10);

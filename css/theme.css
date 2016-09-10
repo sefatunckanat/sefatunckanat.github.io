@@ -115,12 +115,12 @@
     height:150px;
     position: relative;
     text-align:center;
-    background:rgba(124, 169, 207, 0.8);
+    background:rgba(48, 126, 193, 0.53);
     color:#fff;
     overflow:hidden;
 }
 .egitim .box:first-child{
-    background:rgba(24, 193, 91, 0.62);
+    background:rgba(27, 148, 75, 0.54);
 }
 .egitim .box:last-child{
     background:rgba(83, 70, 21, 0.57);
@@ -177,15 +177,6 @@
     background-position:center;
     background-repeat:no-repeat;
     opacity:0.7;
-}
-.egitim .box .img.center{
-    background-image: url(../img/university.png)!important;
-}
-.egitim .box .img:first-child{
-    background-image: url(../img/highschool.png);
-}
-.egitim .box .img:last-child{
-    background-image: url(../img/highschool.png);
 }
 /* HOVERS */
 .egitim .selected,
