@@ -166,7 +166,8 @@
     position:absolute;
     font-weight:bold;
     text-shadow:0px 2px 1px rgba(0,0,0,0.3);
-    font-family: "Francois One"
+    font-family: "Francois One";
+    display: none;
 }
 .egitim .box .img{
     max-height: 150px;
