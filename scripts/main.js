@@ -55,4 +55,39 @@ $(document).ready(function () {
         $("img.button").toggleClass("rotate90");
         $(".menu").toggleClass("show-menu");
     }
+
+    // hakkımda kutularının içindeki spanlarin rasgele stilleri
+    var liveSpans = function(){
+        $(".box .texts span").each(function() {
+            var sizes = [20,25,30,18,40];
+            var colors = [
+                "rgb(120, 5, 207)",
+                "rgb(214, 187, 2)",
+                "rgb(94, 201, 36)",
+                "rgb(201, 36, 36)",
+                "rgb(238, 224, 33)",
+                "rgb(11, 25, 120)",
+                "rgb(184, 7, 213)"
+            ];
+            var size = Math.floor(Math.random() * sizes.length);
+            var posx = Math.floor(Math.random() * 200);
+            var posy = Math.floor(Math.random() * 140);
+            var color = Math.floor(Math.random() * colors.length);
+            var rotate = 45-Math.floor(Math.random() * 90);
+            console.log(rotate);
+            $(this).css("font-size",sizes[size]*(1+Math.random())+"px");
+            $(this).css("left",posx+"px");
+            $(this).css("top",posy+"px");
+            $(this).css("color",colors[color]);
+            $(this).css({
+              '-webkit-transform' : 'rotate(' + rotate + 'deg)',
+              '-moz-transform'    : 'rotate(' + rotate + 'deg)',
+              '-ms-transform'     : 'rotate(' + rotate + 'deg)',
+              '-o-transform'      : 'rotate(' + rotate + 'deg)',
+              'transform'         : 'rotate(' + rotate + 'deg)'
+            });
+        });
+    }
+    liveSpans();
+    var liveSpansLoop = setInterval(liveSpans,5000); // döngü
 });
