@@ -101,7 +101,6 @@ $(document).ready(function () {
             }
         });
     }
-    liveSpans();
     var liveSpansLoop = setInterval(liveSpans,5000); // döngü
 
     $(".box .texts span").each(function() {
