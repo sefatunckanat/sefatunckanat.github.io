@@ -31,7 +31,7 @@ $(document).ready(function () {
     $('.menu li').bind('click', function() {
         //yumuşak kaydırma işlemi
         var hash = $(this).find('span').attr('rel');
-        $('html, body').animate({ 
+        $('html, body').animate({
             scrollTop: $(hash).offset().top
         },800);
         return false;
@@ -102,7 +102,7 @@ $(document).ready(function () {
         });
     }
     liveSpans();
-    var liveSpansLoop = setInterval(liveSpans,1000); // döngü
+    var liveSpansLoop = setInterval(liveSpans,5000); // döngü
 
     $(".box .texts span").each(function() {
         var maxW = parseInt($(this).closest(".texts").css("width"),10);
