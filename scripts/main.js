@@ -1,4 +1,19 @@
 $(document).ready(function () {
+    $.ajax({
+        type: 'GET',
+        url: 'http://api.instagram.com/oembed?callback=&url=https://www.instagram.com/p/1T-86mBWGLo36auEC8hNbL0oNQL0P-bhAbL4U0/',
+        cache: false,
+        dataType: 'jsonp',
+        success: function(data) {
+            console.log(data);
+            try{
+                var url = data.thumbnail_url;
+                $(".instapreview img").attr("src",url);
+                console.log(media_id);
+            }catch(err){}
+        }
+    });
+
     // değişkenler
     var showMenu = false;
 

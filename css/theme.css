@@ -1,4 +1,4 @@
-.page{
+outline:     ;.page{
     width:100%;
     overflow:hidden;
     display:block;
@@ -194,3 +194,44 @@
     opacity:1;
 }
 /* HOVERS */
+.konum{
+    background-color: rgba(8, 55, 111, 0.76);
+    background-image: url(../img/iknow.png);
+    background-size: 64px;
+    background-opactiy:0.2;
+    overflow:hidden;
+    position: relative;
+    padding:30px 0px;
+}
+.konum .center{
+    text-align: center;
+    color:#fff;
+}
+.konum .center i{
+    font-size: 75px;
+    text-shadow:0px 10px 10px rgba(0,0,0,0.2);
+}
+.konum .center i:hover ~ span{
+    opacity: 1;
+}
+.konum .center span{
+    position:absolute;
+    bottom:50%;
+    top:40%;
+    font-size:30px;
+    text-shadow:0px 10px 10px rgba(0,0,0,0.2);
+    opacity:0;
+    transition: 0.2s;
+}
+.konum .instapreview{
+    width:100%;
+    position:absolute;
+    z-index: -1;
+    background:#000
+}
+.konum .instapreview img{
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    display:block;
+}
