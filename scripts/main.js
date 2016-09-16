@@ -151,4 +151,13 @@ $(document).ready(function () {
           'transform'         : 'rotate(' + rotate + 'deg)'
         });
     });
+
+    //github icon hover
+    $(".github-main").hover(function() {
+        $(this).find("span").fadeIn("fast");
+        return false;
+    }, function() {
+        $(this).find("span").fadeOut();
+    });
+    $(".github-main").find("span").hide();
 });
