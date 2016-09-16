@@ -30,4 +30,12 @@
     .egitim .box span{
         font-size:12px;
     }
+    .github-main span{
+        font-size: 20px;
+    }
+    .referanslar img{
+        width:100%;
+        position: relative;
+        top:0;
+    }
 }

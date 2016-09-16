@@ -9,4 +9,3 @@ Kullanılan yardımcı kaynaklar :
  - Animate.css ( https://daneden.github.io/animate.css/ )
  - Fontello Icons ( http://fontello.com/  )
  - Google Fonts ( http://fonts.google.com/ )
- - LightWidget ( https://lightwidget.com )
