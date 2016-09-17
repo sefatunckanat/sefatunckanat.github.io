@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $.ajax({
+    /*$.ajax({
         type: 'GET',
         url: 'http://api.instagram.com/oembed?callback=&url=https://www.instagram.com/p/1T-86mBWGLo36auEC8hNbL0oNQL0P-bhAbL4U0/',
         cache: false,
@@ -12,7 +12,7 @@ $(document).ready(function () {
                 console.log(media_id);
             }catch(err){}
         }
-    });
+    });*/
 
     // değişkenler
     var showMenu = false;
@@ -46,6 +46,7 @@ $(document).ready(function () {
     $('.menu li').bind('click', function() {
         //yumuşak kaydırma işlemi
         var hash = $(this).find('span').attr('rel');
+        console.log($(hash).offset().top);
         $('html, body').animate({
             scrollTop: $(hash).offset().top
         },800);
@@ -160,4 +161,25 @@ $(document).ready(function () {
         $(this).find("span").fadeOut();
     });
     $(".github-main").find("span").hide();
+
+    //basit galeri
+    var size = 0;
+    $(".imgs img").each(function(){
+        var element = $(this);
+        if(element.index()!=0){
+            $(this).hide();
+        }
+        size ++;
+    });
+
+    var i = 1;
+    var basitGaleri = function(){
+        for (var z = 0; z < size; z++) {
+            $(".imgs img:eq("+z+")").hide();
+        }
+        if(i>=size)i=0;
+            $(".imgs img:eq("+i+")").fadeIn();
+        i++;
+    };
+    var ecoGaleri = setInterval(basitGaleri,3123); // döngü
 });

@@ -1,4 +1,4 @@
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:700px) {
     .menu{
         margin-left:-140px;
     }
@@ -33,9 +33,27 @@
     .github-main span{
         font-size: 20px;
     }
-    .referanslar img{
-        width:100%;
+    .ref-head  img{
         position: relative;
         top:0;
+    }
+    .ref-head h2{
+        width:100%;
+        text-align: center;
+        right:0;
+    }
+    .ref-preview h2{
+        font-size: 18px!important;
+        padding:0px 10px!important;
+    }
+    .ref-preview p{
+        font-size: 13px;
+    }
+    .ref-preview .imgs{
+        min-height: unset!important;
+    }
+    .ref-preview .go{
+        font-size:13px;
+        padding:7px!important;
     }
 }

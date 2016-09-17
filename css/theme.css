@@ -215,23 +215,58 @@ outline:     ;.page{
     font-size:30px;
     text-shadow:0px 10px 10px rgba(0,0,0,0.2);
 }
-.referanslar{
-    height: 150px;
-    max-height:200px;
+.ref-head{
+    max-height:150px;
     overflow:hidden;
     position: relative;
 }
-.referanslar img{
+.ref-head img{
     width:100%;
-    position: absolute;
-    top:-70%;
     z-index: -1;
+    margin-top:-70px;
 }
-.referanslar h2{
+.ref-head h2{
     font-size: 30px;
     color: #fff;
     z-index: 2;
     position: absolute;
     right: 20%;
     top: 40%;
+}
+.ref-preview li{
+    width:100%;
+}
+.ref-preview li table{
+    width: 100%;
+}
+.ref-preview li table td{
+    vertical-align: top;
+    padding:10px 0px;
+}
+.ref-preview li .imgs{
+    min-height: 168px;
+}
+.ref-preview li img{
+    width: 100%;
+    border-radius:5px;
+    box-shadow: 0px 5px 10px rgba(68, 82, 175, 0.3);
+}
+.ref-preview li table td:first-child{
+    width: 40%;
+}
+.ref-preview li p{
+    padding: 10px;
+}
+.ref-preview li h2{
+    color: rgb(84, 86, 94);
+    padding: 10px;
+    font-size: 30px;
+}
+.ref-preview .go{
+    padding: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    border-radius:2px;
+    text-align: center;
+    margin-top:10px;
 }
