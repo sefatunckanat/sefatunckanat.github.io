@@ -164,7 +164,7 @@ $(document).ready(function () {
 
     //basit galeri
     var size = 0;
-    $(".imgs img").each(function(){
+    $(".eco .imgs img").each(function(){
         var element = $(this);
         if(element.index()!=0){
             $(this).hide();
@@ -175,10 +175,10 @@ $(document).ready(function () {
     var i = 1;
     var basitGaleri = function(){
         for (var z = 0; z < size; z++) {
-            $(".imgs img:eq("+z+")").hide();
+            $(".eco .imgs img:eq("+z+")").hide();
         }
         if(i>=size)i=0;
-            $(".imgs img:eq("+i+")").fadeIn();
+            $(".eco .imgs img:eq("+i+")").fadeIn();
         i++;
     };
     var ecoGaleri = setInterval(basitGaleri,3123); // döngü

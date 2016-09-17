@@ -11,7 +11,7 @@ outline:     ;.page{
     height:100%;
     position:fixed;
     transition:0.2s;
-    box-shadow:1px 0px 20px rgba(0, 0, 0, 0.3)
+    box-shadow:1px 0px 20px rgba(0, 0, 0, 0.3);
 }
 .menu .button{
     width:64px;
@@ -268,5 +268,4 @@ outline:     ;.page{
     margin-left: 10px;
     border-radius:2px;
     text-align: center;
-    margin-top:10px;
 }

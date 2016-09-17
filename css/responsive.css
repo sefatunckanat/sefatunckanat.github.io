@@ -1,6 +1,7 @@
 @media only screen and (max-width:700px) {
     .menu{
         margin-left:-140px;
+        box-shadow:0px 0px 0px rgba(0,0,0,0);
     }
     .menu .button{
         opacity:0.8;
@@ -20,6 +21,7 @@
     }
     .show-menu{
         margin-left:0;
+        box-shadow:1px 0px 20px rgba(0, 0, 0, 0.3);
     }
     .hakkimda h3{
         width:100%;
@@ -55,5 +57,8 @@
     .ref-preview .go{
         font-size:13px;
         padding:7px!important;
+    }
+    .ref-preview li table td:first-child{
+        width: 50% !important;
     }
 }
