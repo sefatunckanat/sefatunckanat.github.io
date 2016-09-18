@@ -48,7 +48,7 @@ $(document).ready(function () {
         var hash = $(this).find('span').attr('rel');
         $('html, body').animate({
             scrollTop: $(hash).offset().top
-        },800);
+        },300);
         return false;
     });
 
