@@ -263,7 +263,8 @@ outline:     ;.page{
     font-size: 30px;
 }
 .ref-preview .go{
-    padding: 20px;
+    padding:10px 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
     display: inline-block;
     margin-left: 10px;
     border-radius:2px;

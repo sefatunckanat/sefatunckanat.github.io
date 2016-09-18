@@ -119,7 +119,7 @@ $(document).ready(function () {
         }
         var liveSpansLoop = setInterval(liveSpans,5000); // döngü
     }
-    
+
     $(".box .texts span").each(function() {
         var maxW = parseInt($(this).closest(".texts").css("width"),10);
         var maxH = parseInt($(this).closest(".texts").css("height"),10);
@@ -179,7 +179,7 @@ $(document).ready(function () {
             $(".eco .imgs img:eq("+z+")").hide();
         }
         if(i>=size)i=0;
-            $(".eco .imgs img:eq("+i+")").fadeIn();
+            $(".eco .imgs img:eq("+i+")").fadeIn("slow");
         i++;
     };
     var ecoGaleri = setInterval(basitGaleri,3123); // döngü
