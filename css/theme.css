@@ -321,8 +321,9 @@ outline:     ;.page{
     border-radius:2px;
     text-align: center;
 }
-#notlarim img{
-    margin:0;
+.iletisim{
+    display: block;
+    margin-top:-3px;
 }
 .iletisim .in{
     display:table;
@@ -337,7 +338,30 @@ outline:     ;.page{
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
+    transition: 0.2s;
+}
+
+.iletisim .box:hover{
+    cursor: pointer;
+    color: #ebebeb;
+    text-shadow:0px 2px 10px rgba(0, 0, 0, 0.4);
 }
 .iletisim .box i{
-    padding: 20px;
+    padding: 20px 0px;
+}
+.notlar-head{
+    overflow:hidden;
+    position: relative;
+}
+.notlar-head img{
+    width:100%;
+    z-index: -1;
+}
+.notlar-head h2{
+    font-size: 30px;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    right: 20%;
+    top: 40%;
 }

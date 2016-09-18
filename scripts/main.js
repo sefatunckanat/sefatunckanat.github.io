@@ -192,6 +192,14 @@ $(document).ready(function () {
         "#dd4b39",
         "#fff",
         "#0077b5"];
+    var links = [
+        "https://facebook.com/sefatunckanat73/",
+        "https://twitter.com/sefatunckanat/",
+        "mailto:sefatunckanat73@gmail.com",
+        "https://instagram.com/sefatunckanat/",
+        "https://tr.linkedin.com/in/sefa-tunçkanat-a39928b1",
+
+    ]
     $(".iletisim .box").each(function() {
         var index = $(this).index();
         if(index==3){
@@ -199,5 +207,11 @@ $(document).ready(function () {
         }else{
             $(this).css("background",renkler[index]);
         }
+        $(this).click(function(){
+            window.open(
+                links[index],
+                '_blank'
+            );
+        });
     });
 });
