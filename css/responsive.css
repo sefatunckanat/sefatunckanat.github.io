@@ -59,7 +59,20 @@
         padding:7px!important;
         margin:3px 10px;
     }
+    .ref-preview li table td{
+        padding:0;
+        padding-top:10px;
+    }
     .ref-preview li table td:first-child{
         width: 50% !important;
+    }
+    .projeler  img{
+        position: relative;
+        top:0;
+    }
+    .projeler h3{
+        width:100%;
+        text-align: center;
+        right:0;
     }
 }

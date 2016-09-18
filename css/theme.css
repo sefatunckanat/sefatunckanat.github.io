@@ -270,3 +270,21 @@ outline:     ;.page{
     border-radius:2px;
     text-align: center;
 }
+.projeler{
+    max-height:150px;
+    overflow:hidden;
+    position: relative;
+}
+.projeler img{
+    width:100%;
+    z-index: -1;
+    margin-top:-50px;
+}
+.projeler h3{
+    font-size: 30px;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    right: 25%;
+    top: 40%;
+}
