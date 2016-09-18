@@ -321,3 +321,23 @@ outline:     ;.page{
     border-radius:2px;
     text-align: center;
 }
+#notlarim img{
+    margin:0;
+}
+.iletisim .in{
+    display:table;
+    width: 100%;
+}
+.iletisim .box{
+    display: table-cell;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    width: 20%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.iletisim .box i{
+    padding: 20px;
+}

@@ -183,4 +183,21 @@ $(document).ready(function () {
         i++;
     };
     var ecoGaleri = setInterval(basitGaleri,3123); // döngü
+
+    //iletisim kutu renkleri
+
+    var renkler = [
+        "#3A5898",
+        "#1da1f2",
+        "#dd4b39",
+        "#fff",
+        "#0077b5"];
+    $(".iletisim .box").each(function() {
+        var index = $(this).index();
+        if(index==3){
+            $(this).addClass("box-insta");
+        }else{
+            $(this).css("background",renkler[index]);
+        }
+    });
 });
