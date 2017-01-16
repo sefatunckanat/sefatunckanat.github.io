@@ -1,0 +1,367 @@
+outline:     ;.page{
+    width:100%;
+    overflow:hidden;
+    display:block;
+}
+.menu{
+    z-index:999;
+    float:left;
+    display:inline-table;
+    width:140px;
+    height:100%;
+    position:fixed;
+    transition:0.2s;
+    box-shadow:1px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.menu .button{
+    width:64px;
+    height:64px;
+    overflow:hidden;
+    position:absolute;
+    top:12px;
+    opacity:0;
+    transition:0.2s;
+}
+.rotate90{
+    transform: rotate(180deg);
+    opacity:1 !important;
+}
+.menu .center-v{
+    width:100%;
+    margin-top:70px;
+}
+.menu .center-v .headerName{
+    text-align:center;
+    width:100%;
+    font-size:30px;
+}
+.menu .center-v .headerName span{
+    font-size:20px;
+}
+.menu .center-v .atgithub{
+    width:85%;
+    text-align:right;
+    padding:10px 0;
+    font-size:12px;
+}
+.menu .center-v ul{
+    display:block;
+    width:100%;
+    text-align:right;
+    margin-top:16px;
+}
+.menu .center-v ul li:hover{
+    cursor:pointer;
+}
+.menu .center-v ul li{
+    padding: 5px;
+    transition:0.2s;
+}
+.menu .center-v ul .active{
+    opacity:1;
+    color:#e85a71;
+}
+.menu .center-v ul .deactive{
+    opacity: 0.6;
+}
+
+.contents{
+    width:100%;
+}
+.contents .content-inner{
+    margin-left:140px;
+}
+.contents .content-center{
+    width:700px;
+    margin:0 auto;
+}
+.hakkimda{
+    background-color:rgba(47, 27, 21, 0.71);
+    position:relative;
+    overflow:hidden;
+    max-height:200px;
+}
+.hakkimda img{
+    position:relative;
+    width:100%;
+    z-index:-1;
+}
+.hakkimda .slogan{
+    position:absolute;
+    right:10%;
+    top:30%;
+    font-size:30px;
+}
+.hakkimda .slogan span{
+    font-size:14px;
+    text-align:center;
+    display:block;
+    margin-top:10px;
+}
+.hakkimda .slogan p{
+    font-size:11px;
+    margin-top:10px;
+    text-align:center;
+}
+.egitim{
+    display:table;
+    table-layout: fixed;
+    height:150px;
+    width:100%;
+    position:relative;
+}
+.egitim .box{
+    display:table-cell;
+    height:150px;
+    position: relative;
+    text-align:center;
+    background:rgba(48, 126, 193, 0.53);
+    color:#fff;
+    overflow:hidden;
+}
+.egitim .box:first-child{
+    background:rgba(27, 148, 75, 0.54);
+}
+.egitim .box:last-child{
+    background:rgba(83, 70, 21, 0.57);
+}
+.egitim .box .bottom{
+    position: absolute;
+    display: block;
+    width: 100%;
+    transition:0.5s;
+    bottom:0px;
+    transform: translateY(0px);
+    line-height:1.2em;
+    padding:10px;
+    color:rgb(231, 231, 231);
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.3);
+    /* TODO: RESPONSIVE tasarımda font küçültülecek */
+}
+.egitim .box > span{
+    display: table-cell;
+    text-align:center;
+    transition:0.5s;
+    position:absolute;
+    height:100%;
+    width:100%;
+    padding:10px;
+    color:#fff;
+    box-sizing:border-box;
+    font-size:15px;
+    background:rgba(0,0,0,0.5);
+    margin-top:39px;
+    opacity:0;
+    vertical-align: middle;
+}
+.egitim .box .texts{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+.egitim .box .texts span{
+    transition:0.2s;
+    position:absolute;
+    font-weight:bold;
+    text-shadow:0px 2px 1px rgba(0,0,0,0.3);
+    font-family: "Francois One";
+    display: none;
+}
+.egitim .box .img{
+    max-height: 150px;
+    height:100%;
+    width: 100%;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity:0.7;
+}
+/* HOVERS */
+.egitim .selected,
+.egitim .box:hover .img{
+    position: absolute;
+}
+.egitim .selected,
+.egitim .box:hover .bottom{
+    transform: translateY(-111px);
+    transition:0.2s;
+    background:rgba(0,0,0,0.7);
+}
+.egitim .selected,
+.egitim .box:hover > span{
+    opacity:1;
+}
+/* HOVERS */
+.github-main{
+    background-color: rgba(8, 55, 111, 0.76);
+    background-image: url(../img/iknow.png);
+    background-size: 64px;
+    overflow:hidden;
+    position: relative;
+    padding:30px 0px 40px 0px;
+    text-align: center;
+    color:#fff;
+}
+.github-main i{
+    font-size: 75px;
+    text-shadow:0px 10px 10px rgba(0,0,0,0.2);
+}
+.github-main span{
+    position: absolute;
+    width:100%;
+    left:0px;
+    font-size:30px;
+    text-shadow:0px 10px 10px rgba(0,0,0,0.2);
+}
+.ref-head{
+    max-height:150px;
+    overflow:hidden;
+    position: relative;
+}
+.ref-head img{
+    width:100%;
+    z-index: -1;
+    margin-top:-70px;
+}
+.ref-head h2{
+    font-size: 30px;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    right: 20%;
+    top: 40%;
+}
+.ref-preview li{
+    width:100%;
+}
+.ref-preview li table{
+    width: 100%;
+}
+.ref-preview li table td{
+    vertical-align: top;
+    padding:10px 0px;
+}
+.ref-preview li .imgs{
+    min-height: 168px;
+}
+.ref-preview li img{
+    width: 100%;
+    border-radius:5px;
+    box-shadow: 0px 5px 10px rgba(68, 82, 175, 0.3);
+}
+.ref-preview li table td:first-child{
+    width: 40%;
+}
+.ref-preview li p{
+    padding: 10px;
+    line-height: 1.3em;
+}
+.ref-preview li h2{
+    color: rgb(84, 86, 94);
+    padding:0px 10px 10px 10px;
+    font-size: 30px;
+}
+.ref-preview .go{
+    padding:10px 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-left: 10px;
+    border-radius:2px;
+    text-align: center;
+}
+.projeler{
+    max-height:150px;
+    overflow:hidden;
+    position: relative;
+}
+.projeler img{
+    width:100%;
+    z-index: -1;
+    margin-top:-50px;
+}
+.projeler h3{
+    font-size: 30px;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    right: 25%;
+    top: 40%;
+}
+.volyes table td{
+    vertical-align: top;
+    padding: 10px 0px;
+}
+.volyes table{
+    width: 100%;
+}
+.volyes table td:first-child{
+    width: 40%;
+}
+.volyes img{
+    width:100%;
+    border-radius:5px;
+    box-shadow: 0px 5px 10px rgba(68, 82, 175, 0.3);
+}
+.volyes p{
+    line-height: 1.3em;
+    padding: 10px;
+}
+.volyes h2{
+    color: rgb(84, 86, 94);
+    padding:0px 10px 10px 10px;
+    font-size: 30px;
+}
+.volyes .go{
+    padding:10px 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-left: 10px;
+    border-radius:2px;
+    text-align: center;
+}
+.iletisim{
+    display: block;
+    margin-top:-3px;
+}
+.iletisim .in{
+    display:table;
+    width: 100%;
+}
+.iletisim .box{
+    display: table-cell;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    width: 20%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.iletisim .box:hover{
+    cursor: pointer;
+    color: #ebebeb;
+    text-shadow:0px 2px 10px rgba(0, 0, 0, 0.4);
+}
+.iletisim .box i{
+    padding: 20px 0px;
+}
+.notlar-head{
+    overflow:hidden;
+    position: relative;
+}
+.notlar-head img{
+    width:100%;
+    z-index: -1;
+}
+.notlar-head h2{
+    font-size: 30px;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    right: 20%;
+    top: 40%;
+}

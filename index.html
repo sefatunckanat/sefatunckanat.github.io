@@ -1,86 +1,353 @@
----
-layout: default
----
-<div class="right">
-	<div class="list">
-		{% for post in site.posts %}
-		<div class="item">
-			<div class="row">
-				<div class="col6-6">
-					<img src="{{ post.image }}" alt="">
-				</div>
-			</div>
-			<div class="content">
-				<a href="{{ post.url }}">
-					<div class="title">
-						{{ post.title }}
-					</div>
-				</a>
-				<div class="row">
-					<div class="col6-3">
-						<div class="nav">Anasayfa > {{ post.categories }} > {{ post.title }}</div>
-					</div>
-					<div class="col6-3 ta-r">
-						<div class="nav">
-							<span class="date">
-								{% assign m = post.date | date: "%-m" %}
-								{{ post.date | date: "%-d" }}
-								{% case m %}
-									{% when '1' %}Ocak
-									{% when '2' %}Şubat
-									{% when '3' %}Mart
-									{% when '4' %}Nisan
-									{% when '5' %}Mayıs
-									{% when '6' %}Haziran
-									{% when '7' %}Temmuz
-									{% when '8' %}Ağustos
-									{% when '9' %}Eylül
-									{% when '10' %}Ekim
-									{% when '11' %}Kasım
-									{% when '12' %}Aralık
-								{% endcase %}
-								{{ post.date | date: "%Y" }}
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col6-6">
-						<div class="nav">
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta Tags -->
+    <title>Sefa Tunçkanat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kişisel internet sayfası">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <link rel="shortcut icon" href="img/favicon.ico">
 
-						</div>
-					</div>
-				</div>
-				<hr>
-				<div class="text">
-					{{ post.content | strip_html | truncatewords: 100 }}
-				</div>
-			</div>
-		</div>
-		{% endfor %}
-	</div>
-</div>
+    <!-- My Scripts -->
+    <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script src="scripts/main.js"></script>
 
-
+    <!-- CSS Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|PT+Sans&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Fontello(.com) icons
+        <i class="icon icon-left-dir">&#xe800;</i>
+        <i class="icon icon-location">&#xe801;</i>
+        <i class="icon icon-right-dir">&#xe802;</i>
+        <i class="icon icon-twitter">&#xf099;</i>
+        <i class="icon icon-gplus">&#xf0d5;</i>
+        <i class="icon icon-mail">&#xf0e0;</i>
+        <i class="icon icon-github">&#xf113;</i>
+        <i class="icon icon-instagram">&#xf16d;</i>
+        <i class="icon icon-facebook">&#xf230;</i>
+        <i class="icon icon-linkedin-squared">&#xf30c;</i>
+    -->
+</head>
 <!--
-
-<h1>Geliştirme Notlarım</h1>
-{% for dev in site.categories.dev %}
-<a href="{{ dev.url }}">
-	<div>- {{ dev.title }}</div>
-</a>
-{% endfor %}
-
-<h1>Projelerim</h1>
-{% for project in site.data.projects  %}
-	<a href="/projects/{{project.folder}}">
-		{{project.title}}
-	</a>
-	<div>
-		{{project.content}}
-	</div>
-	<br>
-{% endfor %}
-
-<p>{{ site.author }}</p>
+    #TODO Sayfa kaydırma işlemleri sırasında menüde hareketlilik olacak.
+          >Aktif menü itemi scroll durumuna göre değişecek
 -->
+<body>
+    <div class="page">
+        <div class="menu backgroundPrimaryLight">
+            <img class="button animated" src="img/mobile-menu.png">
+            <div class="center-v">
+                <div class="inner5">
+                    <div class="mainHeader">
+                        <h2 class="headerName fontHeader colorPrimaryDark">
+                            S<span>efa</span> T<span>unçkanat</span>
+                        </h2>
+                        <div class="atgithub">@github</div>
+                    </div>
+                    <ul class="colorPrimaryDark">
+                        <li class="active">
+                            <span rel="#hakkimda">
+                                Hakkımda <i class="icon icon-left-dir">&#xe800;</i>
+                            </span>
+                        </li>
+                        <li class="deactive">
+                            <span rel="#referanslar">
+                                Referanslar <i class="icon icon-left-dir">&#xe800;</i>
+                            </span>
+                        </li>
+                        <li class="deactive">
+                            <span rel="#projeler">
+                                Projeler <i class="icon icon-left-dir">&#xe800;</i>
+                            </span>
+                        </li>
+                        <li class="deactive">
+                            <span rel="#notlarim">
+                                Notlarım <i class="icon icon-left-dir">&#xe800;</i>
+                            </span>
+                        </li>
+                        <li class="deactive">
+                            <span rel="#iletisim">
+                                İletişim <i class="icon icon-left-dir">&#xe800;</i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="content-inner">
+                <div class="content-center">
+
+                    <div id="hakkimda" class="hakkimda">
+                        <h3 class="slogan fontHeader colorHeader">
+                            Kişisel İnternet Sayfam
+                            <span>fully native Backend and Frontend</span>
+                            <p>no wordPress!! no frontend framework!!</p>
+                        </h3>
+                        <img src="img/me.jpg" alt="">
+                    </div>
+
+                    <div class="egitim">
+
+                        <div class="box">
+                            <div class="texts">
+                                <span>C#</span>
+                                <span>HTML + CSS</span>
+                                <span>SQL</span>
+                                <span>Oyun Geliştirme</span>
+                                <span><img src="img/gm8.png" alt="" width="60"></span>
+                            </div>
+                            <div class="bottom fontHeader unselectable">
+                                Lise
+                            </div>
+                            <span class="unselectable">
+                                Balıkesir ATL'de Veri Tabanı okudum. Programlamaya girişim oyun yaparak başladı.
+                            </span>
+                        </div>
+
+                        <div class="box">
+                            <div class="texts">
+                                <span>Android</span>
+                                <span>GNU Linux</span>
+                                <span>PHP</span>
+                                <span>C# OOP</span>
+                                <span>JavaScript</span>
+                                <span><img src="img/unity.png" width="60"></span>
+                                <span><img src="img/blender.png" width="60"></span>
+                            </div>
+                            <div class="bottom fontHeader unselectable">
+                                Üniversite
+                            </div>
+                            <span class="unselectable">
+                                BAÜN'de Bilgisayar Programcılığını bitirdim. Android uygulama geliştirmeye ve backend odaklandım.
+                            </span>
+                        </div>
+
+                        <div class="box">
+                            <div class="texts">
+                                <span>PHP</span>
+                                <span>Java</span>
+                                <span>Mobil Geliştirme</span>
+                                <span>REST API</span>
+                                <span>SASS</span>
+                                <span>JWT</span>
+                            </div>
+                            <div class="bottom fontHeader unselectable">
+                                Şuanda
+                            </div>
+                            <span class="unselectable">
+                                Şuanda PHP, C#, JAVA, HTML-CSS-JS bilgim olup web, mobil, desktop için uygulama,site,oyun geliştiriyorum.
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="github-main">
+                        <i class="icon icon-github">&#xf113;</i>
+                        <br>
+                            <a target='_blank' href="https://github.com/sefatunckanat">
+                                <span class="fontHeader">
+                                    sefatunckanat@github
+                                </span>
+                            </a>
+                    </div>
+
+                    <div id="referanslar" class="ref-head">
+                        <h2 class="fontHeader colorHeader">Referanslarım</h2>
+                        <img src="img/workspace.jpg" alt="">
+                    </div>
+
+                    <div class="ref-preview">
+                        <ul>
+                            <li>
+                                <table>
+                                    <tr class="eco">
+                                        <td>
+                                            <div class="imgs">
+                                                <img src="img/ecoprobiotic0.png" alt="">
+                                                <img src="img/ecoprobiotic1.png" alt="">
+                                                <img src="img/ecoprobiotic2.png" alt="">
+                                                <img src="img/ecoprobiotic3.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a target='_blank' href='https://ecoprobiotic.net/'>
+                                                <h2 class="fontHeader">Ecoprobiotic.net</h2>
+                                            </a>
+                                            <p class="colorReverse">
+                                                Ecoprobiotic temizlik ürünlerinin online satışının yapıldığı network satış sisteminin olduğu internet sitesi.
+                                            </p>
+                                            <a target='_blank' class='go backgroundPrimaryDark colorPrimaryLight' href='https://ecoprobiotic.net/'>
+                                                Siteyi Git
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="imgs">
+                                                <img src="img/yonetim.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <h2 class="fontHeader">Ecoprobiotic Yönetim Paneli</h2>
+                                            <p class="colorReverse">
+                                                Ecoprobiotic.net için yaptığım yönetim paneli.
+                                            </p>
+                                            <a target='_blank' class='go backgroundPrimaryDark colorPrimaryLight' href='img/panel-onizleme.jpg'>
+                                                Detaylı Göster
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="imgs">
+                                                <img src="img/bitemizlik.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <h2 class="fontHeader">bitemizlik.com</h2>
+                                            <p class="colorReverse">
+                                                Ev ve ofisler için temizlik servisi veren Bitemizlik firmasının internet sayfası.
+                                            </p>
+                                            <a target='_blank' class='go backgroundPrimaryDark colorPrimaryLight' href='img/panel-onizleme.jpg'>
+                                                Siteye Git
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="imgs">
+                                                <img src="img/bestplace.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <h2 class="fontHeader">Best Place [&nbspandroid&nbsp]</h2>
+                                            <p class="colorReverse">
+                                                BAÜN'deki bitirme projem için yaptığım mobil uygulama. Uygulamaya kayıt olup olduğunuz şehirdeki
+                                                dükkanların kafelerin diğer kişilere göre derecesini veriyor.
+                                            </p>
+                                            <a  target='_blank'
+                                                class='go backgroundPrimaryDark colorPrimaryLight'
+                                                href='https://raw.githubusercontent.com/sefatunckanat/best-place/master/img-git/previews.jpg'>
+                                                Detaylı Gör
+                                            </a>
+                                            <a  target='_blank'
+                                                class='go backgroundPrimaryDark colorPrimaryLight'
+                                                href='https://github.com/sefatunckanat/best-place'>
+                                                Kaynak Kodunu İncele <i class="icon icon-github">&#xf113;</i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="imgs">
+                                                <img src="img/notifdown.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <h2 class="fontHeader">Notif Down [&nbspandroid&nbsp]</h2>
+                                            <p class="colorReverse">
+                                                Büyük ekranlı telefonlar için geliştirdiğim. Cihazları tek elle kullanırken tek tık ile
+                                                bildirim çubuğu genişletmeyi yarayan bir mobil uygulama.
+                                            </p>
+                                            <a  target='_blank'
+                                                class='go backgroundPrimaryDark colorPrimaryLight'
+                                                href='https://play.google.com/store/apps/details?id=com.sefatunckanat.notifdown'>
+                                                Uygulamayı Gör
+                                            </a>
+                                            <a
+                                                class='go backgroundPrimaryDark colorPrimaryLight'
+                                                href="https://play.google.com/store/apps/developer?id=Sefa+Tun%C3%A7kanat" target="_blank">
+                                                Diğer Uygulamalarım
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="projeler" class="projeler">
+                        <img src="img/code.jpg" alt="">
+                        <h3 class="colorHeader fontHeader">Projeler</h3>
+                    </div>
+
+                    <div class="volyes">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="img/volyes-mini.jpg" alt="">
+                                </td>
+                                <td>
+                                    <h2 class="fontHeader">Volyes App</h2>
+                                    <p class="colorReverse">
+                                        Volyes bir video paylaşım platformu
+                                        olarak yakında hizmete girecek. Şuanlık
+                                        IOS uygulaması beta aşamasında. Projede
+                                        sunucudaki arkaplan kısmı ve android
+                                        uygulaması ile ben ilgileniyorum.
+                                    </p>
+                                    <a href="img/volyes.jpg" target="_blank" class="go backgroundPrimaryDark colorPrimaryLight">
+                                        Detaylı Gör
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="notlarim" class="notlar-head">
+                        <h2 class="fontHeader">
+                            Notlarım
+                            <span style="font-size:12px;">
+                                yakında...
+                            </span>
+                        </h2>
+                        <img src="img/note.jpg" alt="">
+                    </div>
+
+                    <div class="iletisim" id="iletisim">
+                        <div class="in">
+                            <div class="box">
+                                <i class="icon icon-facebook">&#xf230;</i>
+                            </div>
+                            <div class="box">
+                                <i class="icon icon-twitter">&#xf099;</i>
+                            </div>
+                            <div class="box">
+                                <i class="icon icon-mail">&#xf0e0;</i>
+                            </div>
+                            <div class="box">
+                                <i class="icon icon-instagram">&#xf16d;</i>
+                            </div>
+                            <div class="box">
+                                <i class="icon icon-linkedin-squared">&#xf30c;</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

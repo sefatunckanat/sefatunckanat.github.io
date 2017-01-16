@@ -1,7 +1,0 @@
-baseurl: /
-author: Sefa Tunçkanat
-job: full stack developer
-title: Kişisel Github Sayfam
-default_locale: "tr"
-sass:
-    style: compressed
