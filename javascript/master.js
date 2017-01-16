@@ -5,7 +5,6 @@ $(function(){
 		$('body>.left').toggleClass("show");
 		$(this).toggleClass("active");
 		menuToggle = !menuToggle;
-		console.log(menuToggle);
 	});
 	$('body>.right').on('mousedown',function(){
 		if(menuToggle){

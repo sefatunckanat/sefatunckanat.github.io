@@ -163,6 +163,15 @@ img
 						text-decoration: underline
 						color: #000
 						font-weight: normal
+				.pager
+					font-size: 1rem
+					a
+						font-size: 14px
+						font-weight: lighter
+						color: $colorText
+						display: inline-block
+						&.next
+							float: right
 				.nav
 					font-size: 12px
 					font-weight: 400
@@ -193,9 +202,18 @@ img
 	text-align: center
 	i
 		text-align: center
-
 	&.active
 		transform: rotate(90deg)
 		-webkit-transform: rotate(90deg)
 		-moz-transform: rotate(90deg)
 		-o-transform: rotate(90deg)
+.error
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-content: center
+	text-align: center
+	flex-direction: column
+	color: $colorText
+	font-weight: lighter
+	text-transform: uppercase

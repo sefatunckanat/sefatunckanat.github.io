@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kişisel Github Sayfamdaki Değişiklikler
-categories: Blog
+categories: Kişisel
 published: true
 date: 16.01.2017
 image: http://timjames.me/img/jekyll/feature.jpg

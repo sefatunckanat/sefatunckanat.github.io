@@ -16,7 +16,7 @@
 					</div>
 					<div class="row">
 						<div class="col6-3">
-							<div class="nav">Anasayfa > {{ page.categories }} > {{ page.title }}</div>
+							<div class="nav">Anasayfa > {{ page.category }} > {{ page.title }}</div>
 						</div>
 						<div class="col6-3 ta-r">
 							<div class="nav">
@@ -50,15 +50,20 @@
 							</div>
 						</div>
 					</div>	
+					
+					<div class="pager">
+						{% if page.previous %}
+						<a href="{{ page.previous.url }}" class="prev">
+							<i class="icon icon-arrow-left"></i> Önceki
+						</a>
+						{% endif %}
+						{% if page.next %}
+						<a href="{{ page.next.url }}" class="next">
+							Sonraki <i class="icon icon-arrow-right"></i>
+						</a>
+						{% endif %}
+					</div>
 
-					<!--
-					{% if page.previous %}
-					<a href="{{ page.previous.url }}">Önceki Post</a>
-					{% endif %}
-					{% if page.next %}
-					<a href="{{ page.next.url }}">Sonraki Post</a>
-					{% endif %}
-					-->
 				</div>
 			</div>
 		</div>

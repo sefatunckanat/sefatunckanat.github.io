@@ -4,4 +4,19 @@ title: Sayfa bulunamadı.
 permalink: /404.html
 ---
 
-Sayfa bulunamadı :(
+<html>
+	{% include head.html %}
+<body>
+	{% include header.html %}
+	
+	<div class="error">
+		<p>
+		İstenilen sayfa yok gibi :( 
+		<br><br>
+		Ama menüye hala ulaşabilirsin :)
+		</p>
+	</div>
+
+	{% include scripts.html %}
+</body>
+</html>
