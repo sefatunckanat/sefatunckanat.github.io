@@ -1,0 +1,66 @@
+<html>
+	{% include head.html %}
+<body>
+	{% include header.html %}
+	<div class="right">
+		<div class="list">
+			<div class="item">
+				<div class="row">
+					<div class="col6-6">
+						<img src="{{ page.image }}" alt="">
+					</div>
+				</div>
+				<div class="content">
+					<div class="title">
+						{{ page.title }}
+					</div>
+					<div class="row">
+						<div class="col6-3">
+							<div class="nav">Anasayfa > {{ page.categories }} > {{ page.title }}</div>
+						</div>
+						<div class="col6-3 ta-r">
+							<div class="nav">
+								<span class="date">
+									{% assign m = page.date | date: "%-m" %}
+									{{ page.date | date: "%-d" }}
+									{% case m %}
+										{% when '1' %}Ocak
+										{% when '2' %}Şubat
+										{% when '3' %}Mart
+										{% when '4' %}Nisan
+										{% when '5' %}Mayıs
+										{% when '6' %}Haziran
+										{% when '7' %}Temmuz
+										{% when '8' %}Ağustos
+										{% when '9' %}Eylül
+										{% when '10' %}Ekim
+										{% when '11' %}Kasım
+										{% when '12' %}Aralık
+									{% endcase %}
+									{{ page.date | date: "%Y" }}
+								</span>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col6-6">
+							<div class="text">
+								{{content}}
+							</div>
+						</div>
+					</div>
+
+					{% if page.previous %}
+					<a href="{{ page.previous.url }}">Önceki Post</a>
+					{% endif %}
+					{% if page.next %}
+					<a href="{{ page.next.url }}">Sonraki Post</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include scripts.html %}
+</body>
+</html>
