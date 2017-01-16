@@ -17,6 +17,6 @@ Kişisel projelerimi ve yazılarımı paylaştığım Github Page sayfamın tasa
 * Pace Page Loader
 * Jquery
 
-Alt yapısınıda [Jekyll](https://jekyllrb.com/) sistemine geçirdim. Bunu yapmamdaki sebep daha hızlı yazı veya proje paylaşabilmek. Bunuda Jekyll sayesinde rahatlıkla yapacağım. Bu yazdığım post dosyalarını push'lamamla birlikte derlenip bana güzel bir düzen halinde çıktısını vermekte.
+Alt yapısınıda [Jekyll](https://jekyllrb.com/)'e geçirdim. Bunu yapmamdaki sebep daha hızlı yazı veya proje paylaşabilmek. Bunuda Jekyll sayesinde rahatlıkla yapacağım. Bu yazdığım post dosyalarını push'lamamla birlikte derlenip bana güzel bir düzen halinde çıktısını vermekte.
 
 Bundan sonra yazacağım yazılarıda bu şekilde paylaşmayı planlıyorum. Jekyll istediğim gibi yazıları sınıflandırmam sağlıyor. Daha birçok araç mevcut bu sistemde include'lar, kendi içindeki sass derleyicisi, layout sistemi ve daha onlarca kullanışlı özelliğe sahip. Şuanda tasarım tam bitmiş sayılmaz ama yinede bu hali bile gerçekten güzel görünmekte. Tamamen bittiğinde yaptığım işleri ve projelerimi paylaştığımda daha çekici bir hale gelecektir.
