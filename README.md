@@ -1,0 +1,1 @@
+Kişisel blog sayfamın Jekyll versiyonu
