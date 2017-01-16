@@ -1,0 +1,54 @@
+.row
+	width: 100%
+	max-width: 100%
+	font-size: 1em
+	&::after
+		content: ''
+		display: block
+		clear: both
+	div[class*="col6"],div[class="col6"]
+		display: inline-block
+		float: left
+		font-size: 0
+		*
+			font-size: 1rem
+	.ta-r
+		text-align: right
+	.ta-l
+		text-align: left
+	.ta-c
+		text-align: center
+	.col-r
+		float: right!important
+	.col-l
+		float: unset!important
+	.col6-6
+		width: 100%
+	.col6-5
+		width: 83.333%
+	.col6-4
+		width: 66.333%
+	.col6-3
+		width: 50%
+	.col6-2
+		width: 33.333%
+	.col6-1
+		width: 16.6666%
+	.pad4-4
+		padding: 16px
+	.pad4-3
+		padding: 12px
+	.pad4-2
+		padding: 8px
+	.pad4-1
+		padding: 4px
+@media screen and (max-width: 1000px) and (min-width: 420px)
+	.row
+		.col6-6,.col6-5,.col6-4
+			width: 100%
+		.col6-3,.col6-2,.col6-1
+			width: 50%
+@media screen and (max-width: 420px)
+	.row
+		.col6-6,.col6-5,.col6-4,.col6-3,.col6-2,.col6-1
+			width: 100%
