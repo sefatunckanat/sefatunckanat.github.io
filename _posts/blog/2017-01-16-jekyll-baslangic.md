@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Kişisel Github Sayfamdaki Değişiklikler
-categories: Kişisel
+categories: blog
+category: Kişisel
 published: true
 date: 16.01.2017
 image: http://timjames.me/img/jekyll/feature.jpg
@@ -20,3 +21,7 @@ Kişisel projelerimi ve yazılarımı paylaştığım Github Page sayfamın tasa
 Alt yapısınıda [Jekyll](https://jekyllrb.com/)'e geçirdim. Bunu yapmamdaki sebep daha hızlı yazı veya proje paylaşabilmek. Bunuda Jekyll sayesinde rahatlıkla yapacağım. Bu yazdığım post dosyalarını push'lamamla birlikte derlenip bana güzel bir düzen halinde çıktısını vermekte.
 
 Bundan sonra yazacağım yazılarıda bu şekilde paylaşmayı planlıyorum. Jekyll istediğim gibi yazıları sınıflandırmam sağlıyor. Daha birçok araç mevcut bu sistemde include'lar, kendi içindeki sass derleyicisi, layout sistemi ve daha onlarca kullanışlı özelliğe sahip. Şuanda tasarım tam bitmiş sayılmaz ama yinede bu hali bile gerçekten güzel görünmekte. Tamamen bittiğinde yaptığım işleri ve projelerimi paylaştığımda daha çekici bir hale gelecektir.
+
+<div style="display:none">
+	{% gist scrogson/98580 %}
+</div>

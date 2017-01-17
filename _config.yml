@@ -3,5 +3,7 @@ author: Sefa Tunçkanat
 job: full stack developer
 title: Kişisel Github Sayfam
 default_locale: "tr"
+gems:
+  - jekyll-gist
 sass:
-    style: compressed
+  style: compressed
