@@ -50,7 +50,7 @@ layout: default
 				</div>
 				<hr>
 				<div class="text">
-					{{ post.content | strip_html | truncatewords: 50 }}
+					{{ post.content | truncatewords: 100 }}
 				</div>
 			</div>
 		</div>
@@ -58,6 +58,7 @@ layout: default
 	</div>
 </div>
 
+<!--
 <h1>Geliştirme Notlarım</h1>
 {% for dev in site.categories.dev %}
 <a href="{{ dev.url }}">
@@ -77,3 +78,4 @@ layout: default
 {% endfor %}
 
 <p>{{ site.author }}</p>
+-->

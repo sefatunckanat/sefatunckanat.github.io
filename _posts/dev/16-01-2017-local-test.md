@@ -5,7 +5,7 @@ image: http://ccivineyard.com/wp-content/uploads/2012/10/santa-rosa-fence-post.j
 categories: dev
 category: Geliştirme
 permalink: /:title
-published: true
+published: false
 date: 16.01.2017
 ---
 
