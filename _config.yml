@@ -1,7 +1,7 @@
 baseurl: /
 author: Sefa Tunçkanat
-job: full stack developer
-title: Kişisel Github Sayfam
+job: ufaktan full stack developer
+title: sefatunckanat@github
 default_locale: "tr"
 gems:
   - jekyll-gist

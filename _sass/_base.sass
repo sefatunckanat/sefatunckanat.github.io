@@ -18,7 +18,8 @@ hr
 .image
 	background-size: cover
 	background-position: center
-	background-repaat: no-repeat
+	background-repeat: no-repeat
+
 $colorText: #5E5E5E
 $colorItem: #3A3A3A
 $colorItemHover: #6A6A6A
@@ -80,6 +81,7 @@ img
 	padding: 0 30px
 	transition: 0.2s
 	float: left
+	z-index: 99
 	position: fixed
 	.box
 		display: flex
@@ -150,8 +152,23 @@ img
 			border: 1px solid $colorBorder
 			background: #fff
 			margin-bottom: 20px
+			position: relative
 			&:last-child
 				margin-bottom: 0
+			.button
+				width: 50%
+				margin: 10px auto
+				border: 2px solid $colorBorder
+				padding: 10px
+				text-align: center
+				color: $colorText
+				font-weight: lighter
+				transition: 0.3s
+				font-size: 1rem
+				display: block
+				&:hover
+					background: rgba(#000,0.07)
+					color: $colorItem
 			.content
 				padding: 20px
 				.text
@@ -192,20 +209,52 @@ img
 					color: $colorItem
 					font-size: 2em
 		.item.contact
+			.social
+				color: $colorText
+				font-weight: lighter
+				margin: 5px 0
+			.me
+				position: relative
+				height: 400px
+				width: 100%
+				overflow: hidden
+				z-index: 1
+				&:hover .image
+					filter: blur(1px)
+				.title
+					font-weight: 600
+					color: #fff
+					z-index: 2
+					font-size: 2rem
+					position: absolute
+					right: 20px
+					top: 20px
+				.gray
+					background-color: rgba(20,30,30,0.5)
+					height: 100%
+					width: 100%
+					position: absolute
+					z-index: 1
+				.image
+					filter: blur(5px)
+					-webkit-filter: blur(5px)
+					-moz-filter: blur(5px)
+					-o-filter: blur(5px)
+					height: 400px
+					transition: 0.4s
+					background-position: top
+					background-image: url("https://raw.githubusercontent.com/sefatunckanat/sefatunckanat.github.io/old/img/me.jpg")
 			.text
 				font-weight: 300
 				line-height: 1.7em
 				color: $colorItem
 				padding: 10px 0
+				text-align: justify
 				a
 					text-decoration: underline
 					color: #000
 					font-weight: normal
-			.title
-				font-weight: 600
-				margin: 0 0 5px
-				color: $colorItem
-				font-size: 2rem
+			
 			img
 				filter: grayscale(0.5)
 				-moz-filter: grayscale(0.5)
@@ -246,5 +295,4 @@ img
 	flex-direction: column
 	color: $colorText
 	font-weight: lighter
-	text-transform: uppercase
 	
