@@ -50,7 +50,14 @@ layout: default
 				</div>
 				<hr>
 				<div class="text">
-					{{ post.content | truncatewords: 100 }}
+					{{ post.content | truncatewords: 50 }}
+				</div>
+				<div class="row">
+					<div class="col6-6 ta-r">
+						<a href="{{ post.url }}">
+							Devamını Oku
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
