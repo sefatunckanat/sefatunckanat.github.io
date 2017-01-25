@@ -5,7 +5,7 @@ categories: blog
 category: Kişisel
 published: true
 date: 16.01.2017
-image: http://timjames.me/img/jekyll/feature.jpg
+image: /images/jekyll.jpg
 permalink: /:title
 ---
 
