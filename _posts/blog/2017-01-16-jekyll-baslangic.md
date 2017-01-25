@@ -9,7 +9,7 @@ image: /images/jekyll.jpg
 permalink: /:title
 ---
 
-Kişisel projelerimi ve yazılarımı paylaştığım Github Page sayfamın tasarımını ve alt yapısını değiştirdim. Tasarımı baştan daha basitleştirilmiş hale getirdim. Diğer tasarıma göre daha hızlı daha temiz kodlara sahip durumda şuan. [Koala](http://koala-app.com)'yı yine sass compilerı için kullandım. Bunun dışındaki tüm dış araçlar [CDNJS](https://cdnjs.com/)'den gelmekte. Eski tasarım diğer branchda duracak. Fakat kendi yazdığım ve boş duran döküman ve kodlara karşı farklı yaklaşıyorum. Belkide silmeliyim o eski tasarımı bilemedim :)
+Kişisel projelerimi ve yazılarımı paylaştığım Github Page sayfamın tasarımını ve alt yapısını değiştirdim. Tasarımı baştan daha basitleştirilmiş hale getirdim. Diğer tasarıma göre daha hızlı daha temiz kodlara sahip durumda şuan. [Koala](http://koala-app.com){:target="_blank"}'yı yine sass compilerı için kullandım. Bunun dışındaki tüm dış araçlar [CDNJS](https://cdnjs.com/){:target="_blank"}'den gelmekte. Eski tasarım diğer branchda duracak. Fakat kendi yazdığım ve boş duran döküman ve kodlara karşı farklı yaklaşıyorum. Belkide silmeliyim o eski tasarımı bilemedim 😅
 
 **CNDJS den aldığım araçlar**
 
