@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<div class="right">
+    <div class="list works">
+        {% for project in site.data.projects %}
+        <div class="item">
+            <div class="row">
+                <div class="col6-2">
+                    <div class="image">
+                        <a href="{{ project.image }}" data-lightbox="{{ project.title }}">
+                            <img src="{{ project.image }}" alt="{{ project.title }}">
+                        </a>
+                        <div class="tags">
+                            {% for tag in project.tags %}
+                            <span class="tag">{{tag.title}}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col6-4 pad4-2">
+                    <div>
+                        <div class="title">
+                            {{ project.title }}
+                        </div>
+                        <div class="desc">
+                            {{ project.content }}
+                        </div>
+                        <div class="rows buttons">
+                            {% for link in project.links %}
+                            <div class="col6-3">
+                                <a href="{{ link.url }}" target="_blank">
+                                    {{ link.text }}
+                                </a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

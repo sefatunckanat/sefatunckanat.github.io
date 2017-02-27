@@ -302,6 +302,74 @@ img
 				font-size: 0.6rem
 				background: rgba(#000,0.4)
 				padding: 10px
+	.list.works
+		.image
+			padding: 10px
+			border-right: 1px solid rgba(#000,0.1)
+			border-bottom: 1px solid rgba(#000,0.1)
+			position: relative
+			margin-bottom: 10px
+		.image:hover *
+			cursor: zoom-in
+		.buttons
+			text-align: right
+			vertical-align: text-bottom
+			a
+				width: 50%
+				margin: 10px auto
+				border: 2px solid #ececec
+				padding: 10px
+				text-align: center
+				color: #5E5E5E
+				font-weight: lighter
+				transition: .3s
+				font-size: 1rem
+				display: block
+				&:hover
+					background: #ececec
+		.title
+			font-weight: 600
+			margin: 0 0 5px
+			color: #3A3A3A
+			font-size: 2em
+			border-bottom: 1px solid rgba(#000,0.1)
+			padding-bottom: 5px
+			margin-bottom: 5px
+		.desc
+			font-weight: 300
+			line-height: 1.7em
+			color: #3A3A3A
+			padding: 10px 0
+		.tags
+			position: absolute
+			right: 0
+			bottom: 10px
+			user-select: none
+			pointer-events: none
+			span
+				user-select: none
+				pointer-events: none
+				padding: 5px
+				color: #fff
+				margin: 5px 0
+				display: inline-block
+				border-radius: 1px
+				font-size: 12px
+				border: 1px solid rgba(#000,0.1)
+				&:nth-child(1)
+					background: #b48c5e
+				&:nth-child(2)
+					background: #6bb469
+				&:nth-child(3)
+					background: #5783b4
+				&:nth-child(4)
+					background: #b46486
+				&:nth-child(5)
+					background: #b44c51
+				&:nth-child(6)
+					background: #b4b44a
+				&:last-child
+					margin-right: 15px
 .mobileToggle
 	font-size: 30px
 	position: fixed

@@ -1,11 +1,64 @@
-- title: Best Place
-  folder: bestplace
-  content: Mobil uygulama
+- title: "Ecoprobiotic.net"
+  content: "Ecoprobiotic firması için yapmış olduğum web sayfasıdır. Firma içerisinde kredi kartı ile ürün satışı yapmakta. Sitenin yönetim panelinden site içeriğini komple değiştirebiliyoruz. SSL belgesi ile kredi kartı ödeme sistemi bulunmakta."
+  image: "images/ecoprobiotic.png"
+  links:
+    - text: "Siteye Git"
+      url: "https://ecoprobiotic.net/"
+  tags:
+    - title: "#web"
+    - title: "#php"
+    - title: "#responsive"
+    - title: "#e-ticaret"
 
-- title: Dikkat Testi
-  folder: dikkattesti
-  content: Mobil dikkat kontrol oyunu
+- title: "Bitemizlik.com"
+  content: "Temizlik üzerine müşteri & uzman mantığına dayalı ilan verme, iş bulma sitesi. İçerisinde kişiler ilan açıp temizlik uzmanları tarafından gelen teklifleri değerlendirip anlaşma sağlıyorlar."
+  image: "images/bitemizlik.png"
+  links:
+    - text: "Siteye Git"
+      url: "https://bitemizlik.com/"
+  tags:
+    - title: "#web"
+    - title: "#php"
+    - title: "#responsive"
 
-- title: Notif Down
-  folder: notifdown
-  content: Mobil telefonların bildirim çubuğunun kolayca indirilmesini sağlayan uygulama
+- title: "Best Place"
+  image: "https://raw.githubusercontent.com/sefatunckanat/best-place/master/img-git/previews.jpg"
+  content: "Üniversite bitirme ödevi olarak yaptığım mobil uygulama. Android studio üzerinde geliştirildi. Php sunucu ile bağlantılı olarak basit bir sosyal medya uygulamasıdır. Sunucu üzerindeki şehirde kayıtlı mekanların arasında filtreleme yapabildiğimiz mobil uygulama. İçerisinde kayıt olma, giriş yapma, profil detayları, takipleşme gibi özellikler bulunmakta. Projenin tüm kaynakları Github üzerinden paylaşılmıştır."
+  links:
+    - text: "Projeyi İncele"
+      url: "https://github.com/sefatunckanat/best-place"
+  tags:
+    - title: "#android"
+    - title: "#php"
+    - title: "#rest api"
+
+- title: "Dikkat Testi"
+  content: "Libgdx oyun kütüphanesi ile Javada geliştirdiğim mobil hafıza oyunu. İçerisinde Google Play Servisler ve Facebook entragrasyonu bulunuyor."
+  image: "images/dikkat-testi.png"
+  links:
+      - text: "Google Play"
+        url: "https://play.google.com/store/apps/details?id=umonster.dikkattesti"
+  tags:
+    - title: "#android"
+    - title: "#java"
+    - title: "#libgdx"
+
+- title: "Notif Down"
+  content: "Mobil telefonların bildirim çubuğunun kolayca indirilmesini sağlayan uygulama. Ekranı büyük telefonları tek elle kullanımı sırasında bildirim çubuğunu rahatça indirmenizi sağlayan mobil uygulama."
+  image: "images/notif-down.png"
+  links:
+    - text: "Google Play"
+      url: "https://play.google.com/store/apps/details?id=com.sefatunckanat.notifdown"
+  tags:
+    - title: "#android"
+    - title: "#java"
+
+- title: "Üniversitelio"
+  content: "Üniversitelio.com sitesinin mobil uygulaması. İçerisinde sınav hazırlığı için gerekli konuların takip sistemi bulunmakta. Ygs ve Lys sınavları için konu dağılımı ve sınav bildirimi yapmakta."
+  image: "images/universitelio.png"
+  links:
+    - text: "Google Play"
+      url: "https://play.google.com/store/apps/details?id=com.universitelio.android"
+  tags:
+    - title: "#android"
+    - title: "#java"
