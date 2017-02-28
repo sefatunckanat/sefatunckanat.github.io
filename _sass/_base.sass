@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800')
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700')
 html
 	font-family: "Open Sans",sans-serif
 	background: #f5f5f5
@@ -400,3 +401,62 @@ img
 	color: $colorText
 	font-weight: lighter
 	
+.cv
+	background: #23241f
+	font-family: "Source Code Pro",monospace
+	font-size: 14px
+	overflow-x: scroll
+	.line
+		line-height: 16px
+		position: relative
+		white-space: nowrap
+		border-bottom: 1px solid rgba(#fff,0.0)
+		border-top: 1px solid rgba(#fff,0.0)
+		transition: 0.2s
+		&:before
+			display: inline-block
+			position: absolute
+			left: 0
+			width: 15px
+			content: attr(data-line)
+			color: #fff
+			top: -2
+			background: #5E5E5E
+			padding: 0 10px
+			border-right: 1px solid #737373
+			height: 110%
+		&:hover
+			border-bottom: 1px solid rgba(#fff,0.1)
+			border-top: 1px solid rgba(#fff,0.1)
+			background: rgba(#000,0.2)
+		&.p1
+			padding-left: 50px
+		&.p2
+			padding-left: 75px
+		&.p3
+			padding-left: 100px
+		&.p4
+			padding-left: 125px
+	.tag,.subst
+		color: #f8f8f2
+	.strong,.emphasis
+		color: #a8a8a2
+	.bullet,.quote,.number,.regexp,.literal,.link
+		color: #ae81ff
+	.code,.title,.section,.selector-class
+		color: #a6e22e
+	.strong
+		font-weight: bold
+	.emphasis
+		font-style: italic
+	.keyword,.selector-tag,.name,.attr
+		color: #f92672
+	.symbol,.attribute
+		color: #66d9ef
+	.params,.class
+		color: #f8f8f2
+	.string,.type,.built_in,.builtin-name,.selector-id,.selector-attr,
+	.selector-pseudo,.addition,.variable,.template-variable
+		color: #e6db74
+	.comment,.deletion,.meta
+		color: #75715e

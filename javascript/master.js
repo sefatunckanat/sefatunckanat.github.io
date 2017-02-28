@@ -13,4 +13,7 @@ $(function(){
 			menuToggle = !menuToggle;
 		}
 	});
+	$(".cv .line").each(function (index) {
+		$(this).attr("data-line",index+1);
+    });
 });

@@ -2,6 +2,13 @@ baseurl: /
 author: Sefa Tunçkanat
 job: junior developer
 title: sefatunckanat@github.com
+mail: sefatunckanat73@gmail.com
+facebook: http://facebook.com/sefatunckanat73
+twitter: http://twitter.com/sefatunckanat
+instagram: http://instagram.com/sefatunckanat
+github: http://github.com/sefatunckanat
+web: http://sefatunckanat.github.io/
+linkedin: https://www.linkedin.com/in/sefa-tun%C3%A7kanat-a39928b1/
 default_locale: "tr"
 gems:
   - jekyll-gist
