@@ -84,6 +84,19 @@ img
 	float: left
 	z-index: 99
 	position: fixed
+	.bottom
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		text-align: center
+		color: rgba(#000,0.2)
+		margin: 10px 0
+		font-size: 12px
+		transition: 0.2s
+		line-height: 1.6em
+		&:hover
+			color: rgba(#000,0.3)
 	.box
 		display: flex
 		align-content: center
@@ -300,7 +313,8 @@ img
 				right: 0
 				top: 0
 				color: #fff
-				font-size: 0.6rem
+				font-weight: lighter
+				font-size: 0.7rem
 				background: rgba(#000,0.4)
 				padding: 10px
 	.list.works

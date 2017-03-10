@@ -1,5 +1,6 @@
 $(function(){
 	$('img').on('dragstart', function(event) { event.preventDefault(); });
+
 	var menuToggle = false;
 	$('.mobileToggle').on('click',function(){
 		$('body>.left').toggleClass("show");
@@ -16,4 +17,9 @@ $(function(){
 	$(".cv .line").each(function (index) {
 		$(this).attr("data-line",index+1);
     });
+
+    var url = window.location;
+    var element = $(".left a").filter(function() {
+        return this.href == url;
+    }).find(".item").addClass('active').parent();
 });
