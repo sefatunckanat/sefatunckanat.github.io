@@ -1,3 +1,12 @@
+- title: "Shadows – 3B Blok Bulmaca"
+  content: "Beyazay ile birlikte geliştirdiğimiz 3 boyutlu mobil bulmaca oyunu. Oyun içerindeki farklı küp setlerini hareket ettirerek istenilen şekli hareketli küplerin gölgelerinin birleşiminde oluşturmaya çalışıyoruz. Oyun kısa sürede geniş bir kitleye hitap etti. Birçok youtube kanalında ve teknoloji haber sitelerinde yayınladı.<br><br><b><a href='http://webrazzi.com/2017/06/21/shadows-bulmaca-oyunu/'>Webrazzi - Yerli bulmaca oyunları için yeni bir soluk: Shadows</a></b><br><br>Oyun geliştirme kısmında <b>Unity3D</b> kullanıldı. Tüm veriler JSON türünde kayıt edilip. Tekil kodlar ile oyun sahneleri hazırlanıyor. Tüm sistem <b>C#</b> ile yazıldı. Tüm sistem sonradan kontrol edilebilir şekilde oluşturuldu."
+  image: "images/shadows.jpg"
+  links:
+    - text: "Google Play"
+      url: "https://play.google.com/store/apps/details?id=com.beyazay.shadows.blockpuzzle"
+  tags:
+    - title: "#unity3d"
+    - title: "#android"
 - title: "Ecoprobiotic.net"
   content: "Ecoprobiotic firması için yapmış olduğum web sayfasıdır. Firma içerisinde kredi kartı ile ürün satışı yapmakta. Sitenin yönetim panelinden site içeriğini komple değiştirebiliyoruz. SSL belgesi ile kredi kartı ödeme sistemi bulunmakta."
   image: "images/ecoprobiotic.png"
