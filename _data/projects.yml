@@ -19,12 +19,35 @@
     - title: "#responsive"
     - title: "#e-ticaret"
 
+- title: "EktaYapı.com"
+  content: "Ekta Yapı firması için yapmış olduğum web sayfasıdır. Sitenin yönetim panelinden site içeriğini komple değiştirebiliyoruz."
+  image: "images/ekta.png"
+  links:
+    - text: "Siteye Git"
+      url: "https://ektayapi.com/"
+  tags:
+    - title: "#web"
+    - title: "#php"
+    - title: "#responsive"
+    - title: "#material"
+
 - title: "Bitemizlik.com"
   content: "Temizlik üzerine müşteri & uzman mantığına dayalı ilan verme, iş bulma sitesi. İçerisinde kişiler ilan açıp temizlik uzmanları tarafından gelen teklifleri değerlendirip anlaşma sağlıyorlar."
   image: "images/bitemizlik.png"
   links:
     - text: "Siteye Git"
       url: "https://bitemizlik.com/"
+  tags:
+    - title: "#web"
+    - title: "#php"
+    - title: "#responsive"
+
+- title: "Soluverim.com"
+  content: "Soluverim firması için yapmış olduğum web sayfasıdır. Sitenin yönetim panelinden site içeriğini komple değiştirebiliyoruz."
+  image: "images/soluverim.png"
+  links:
+    - text: "Siteye Git"
+      url: "https://soluverim.com/"
   tags:
     - title: "#web"
     - title: "#php"
